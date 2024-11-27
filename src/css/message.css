@@ -1,0 +1,35 @@
+.message{
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-flow: nowrap row;
+    gap:1.5rem;
+    height:fit-content;
+    overflow-wrap: break-word;
+}
+.message.message__user{
+    align-self:flex-end;
+    width:fit-content;
+    background-color: var(--bg-gray);
+    padding:.35rem 1.5rem .5rem;
+    border-radius: 15rem;
+    font-size:1.15rem;
+    max-width: 75%;
+}
+
+.message.message__ai{
+    align-self:left;
+}
+
+.message__pfp{
+    border: 2px var(--bg-gray) solid;
+    border-radius: 10rem;
+    height:21px;
+    padding:.25rem;
+    transform:translateY(-30%);
+}
+.message--img{
+    display: block;
+    width:50%;
+    margin-bottom:5%;
+}

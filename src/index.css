@@ -1,0 +1,107 @@
+.flex{
+  display:flex;
+}
+.align-items-center{
+  align-items: center;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+#root{
+  width:100dvw;
+  height:100dvh;
+  display:flex;
+  font-family: "Noto Sans", sans-serif;
+
+  --text-color: #5D5D5D;
+  --bg-gray: rgb(244 244 244);
+  --width: 50dvw;
+
+}
+
+body{
+  margin: 0;
+  overflow:hidden;
+  color:var(--text-color);
+}
+
+u{
+  cursor:pointer;
+}
+
+span{
+  color:var(--text-color);
+  font-size:0.875rem;
+  margin-bottom: .5rem;
+}
+
+h1{
+  text-align: center;
+}
+
+.invisible{
+  opacity: 0;
+  user-select: none;
+}
+
+.app--textbox{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.app--textbox__bottom{
+  top:95%;
+  transform: translate(-50%, -100%);
+}
+
+nav{
+  position:absolute;
+  top:0;
+  width:100%;
+  height:fit-content;
+}
+
+.app--bottom-text{
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%)
+}
+
+.app--messages{
+  width:var(--width);
+  margin: 2rem auto;
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content:start;
+  height:75%;
+  gap:2rem;
+  overflow-y:scroll;
+
+  padding: 0 25%
+}
+
+.app--messages{
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.app--messages::-webkit-scrollbar { display: none; } /* Chrome */
+
+@media (max-width: 600px) {
+  #root {
+    --width: 85dvw;
+  }
+  .app--bottom-text{
+    font-size:.4rem;
+  }
+}
