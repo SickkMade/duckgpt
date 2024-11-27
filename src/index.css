@@ -62,17 +62,12 @@ h1{
   transform: translate(-50%, -100%);
 }
 
-nav{
-  position:absolute;
-  top:0;
-  width:100%;
-  height:fit-content;
-}
-
 .app--bottom-text{
   position: absolute;
   bottom:0;
   left:50%;
+  width:75%;
+  text-align: center;
   transform: translateX(-50%)
 }
 
@@ -103,5 +98,9 @@ nav{
   }
   .app--bottom-text{
     font-size:.4rem;
+  }
+  .app--messages{
+    width:100%;
+    padding:0 2rem;
   }
 }

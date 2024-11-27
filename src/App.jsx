@@ -1,6 +1,7 @@
 import Textbox from "./textbox"
 import { useState, useRef, useCallback } from "react"
 import Message from "./message";
+import Nav from "./Nav";
 
 function App() {
   const [isLongUi, setIsLongUi] = useState(false);
@@ -60,7 +61,7 @@ function App() {
 
   return (
     <>
-    {/* <nav>nav</nav> */}
+    <Nav />
     <section ref={messageWrapperRef} className="app--messages">
       {messages.map((message, index) => {
         return <Message key={index} ScrollDown={ScrollDown} text={message.text} sender={message.sender}/>
@@ -72,7 +73,7 @@ function App() {
       <Textbox inputRef={inputRef} SendMessage={SendMessage} setUserInputValue={setUserInputValue} HandleKeyDown={HandleKeyDown}/>
       {/* <div className={isLongUi ? `invisible` : ``} >tags</div> */}
     </div>
-    <span className="app--bottom-text">By messaging ChatGPT, you agree to our <u>Terms</u> and have read our <u>Privacy Policy</u>.</span>
+    <span className="app--bottom-text">By messaging DuckGPT, you agree to our <u>Terms</u> and have read our <u>Privacy Policy</u>.</span>
     </>
   )
 }
