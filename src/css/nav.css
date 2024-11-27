@@ -81,7 +81,8 @@ nav div{
     }
     .nav--icons{
         width:100dvw;
-        
+        display:flex;
+        flex-flow: row nowrap;
     }
     nav{
         align-items:center;
