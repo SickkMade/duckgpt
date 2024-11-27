@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "/sickkmade.github.io/duckgpt/",
+  "base": "/sickkmade.github.io/duckgpt/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
