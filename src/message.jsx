@@ -10,7 +10,6 @@ const Message = memo(function Message({text, sender, ScrollDown}) {
             try {
                 const response = await fetch('https://corsproxy.io/?url=https://random-d.uk/api/v2/random');
                 const data = await response.json();
-                console.log(data)
                 
                 // Create a new Image object to handle loading
                 const img = new Image();
