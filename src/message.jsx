@@ -8,7 +8,7 @@ const Message = memo(function Message({text, sender, ScrollDown}) {
     useEffect(() => {
         const fetchImage = async () => {
             try {
-                const response = await fetch('https://CorsProxy.io/?https://random-d.uk/api/v2/random');
+                const response = await fetch('https://CorsProxy.io/?url=https://random-d.uk/api/v2/random');
                 const data = await response.json();
                 
                 // Create a new Image object to handle loading
