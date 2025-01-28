@@ -95,7 +95,7 @@ h1{
 @media (max-width: 600px) {
   #root {
     --width: 85dvw;
-  }
+  } 
   .app--bottom-text{
     font-size:.4rem;
   }
